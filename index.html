@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link rel="stylesheet" href="style.css" />
+  <title>New Year Countdown</title>
+  <link rel="icon" href="./icon/shortcut.png"></link>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+  integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+  <div id="sidebar" class="sidebar">
+    <div class="label">
+      <img src="./icon/playlist1.png" alt="">
+    </div>
+    <p id="clicktopin" class="clicktopin"><strong>CLICK TO PIN / UNPIN</strong></p>
+
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 id="title"></h4>
+      <div class="progress-container" id="progress-container" ><div id="progress" class="progress"></div>
+      </div>
+      </div>
+    <audio src="/music/Пять минут.mp3" id="audio"></audio>
+    <div class="img-container">
+      <img src="/covers/carnivalnight.jpg" alt="music-cover" id="cover">
+    </div>
+    <div id="navigation" class="navigation">
+      <button class="action-btn" id="prev">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button class="action-btn action-btn-big" id="play">
+        <i class="fas fa-play"></i>
+      </button>
+      <button class="action-btn" id="next">
+        <i class="fas fa-forward"></i>
+      </button>
+    </div>  
+  </div>
+  </div>
+  <div id="year" class="year"></div>
+  <h1>New Year Countdown</h1>
+  <div id="countdown" class="countdown">
+    <div class="time">
+      <h1 id="days"></h1>
+      <small>Days</small>
+    </div>
+    <div class="time">
+      <h1 id="hours"></h1>
+      <small>Hours</small>
+    </div>
+    <div class="time">
+      <h1 id="minutes"></h1>
+      <small>Minutes</small>
+    </div>
+    <div class="time">
+      <h1 id="seconds"></h1>
+      <small>Seconds</small>
+    </div>
+    <img src="./img/spinner.gif" alt="Loading..." id="loading" class="loading">
+  </div>
+   <script src="./scripts/countdown.js"></script>
+   <script src="./scripts/player.js"></script>
+  </div>
+</body>
+</html>
